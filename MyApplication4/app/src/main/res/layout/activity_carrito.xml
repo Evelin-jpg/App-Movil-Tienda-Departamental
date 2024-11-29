@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@drawable/pink_background_login_up">
+
+    <!-- Título en negrita y centrado -->
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Carrito De Compras"
+        android:textSize="34sp"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:layout_marginBottom="8dp"/>
+
+    <!-- Espacio decorativo entre título y subtítulo -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="."
+        android:textSize="15sp"
+        android:textColor="#F682A4"
+        android:layout_marginBottom="8dp"/>
+
+    <!-- Subtítulo con un texto más pequeño -->
+    <TextView
+        android:id="@+id/tvSubtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Catalogo de productos:"
+        android:textSize="16sp"
+        android:textColor="#000000"
+        android:layout_marginBottom="20dp"/>
+
+    <!-- Espacio decorativo entre título y subtítulo -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="."
+        android:textSize="10sp"
+        android:textColor="#F682A4"
+        android:layout_marginBottom="8dp"/>
+
+    <!-- ListView para mostrar los productos en el carrito -->
+    <ListView
+        android:id="@+id/listViewCarrito"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <TextView
+        android:id="@+id/textTotal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Total: $0"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:padding="16dp" />
+
+
+
+    <!-- Botones de acción y productos al costado -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="16dp">
+
+        <!-- Botones de productos (ubicados en la parte inferior, al costado de otros botones) -->
+        <Button
+            android:id="@+id/btnProducto1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Conjunto F."
+            android:backgroundTint="#D71A58"
+            android:textColor="#FFFFFF"
+            android:layout_marginEnd="8dp"/>
+
+        <Button
+            android:id="@+id/btnProducto2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Conjunto M."
+            android:backgroundTint="#D71A58"
+            android:textColor="#FFFFFF"
+            android:layout_marginEnd="8dp"/>
+
+        <Button
+            android:id="@+id/btnProducto3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Accesorio"
+            android:backgroundTint="#D71A58"
+            android:textColor="#FFFFFF" />
+    </LinearLayout>
+
+    <!-- Botones adicionales de acción -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="16dp"
+        android:weightSum="3">
+
+        <Button
+            android:id="@+id/btnDisminuirCantidad"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Disminuir Cantidad"
+            android:backgroundTint="#D71A58"
+            android:textColor="#FFFFFF"
+            android:layout_marginEnd="8dp" />
+
+        <Button
+            android:id="@+id/btnEliminarProducto"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Eliminar Producto"
+            android:backgroundTint="#D71A58"
+            android:textColor="#FFFFFF"
+            android:layout_marginEnd="8dp" />
+
+        <Button
+            android:id="@+id/btnVaciarCarrito"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Vaciar Carrito"
+            android:backgroundTint="#D71A58"
+            android:textColor="#FFFFFF" />
+    </LinearLayout>
+
+
+
+
+    <!-- Botones para acciones de navegación -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="16dp">
+
+        <Button
+            android:id="@+id/btnMenu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Menú"
+            android:backgroundTint="#FFFFFF"
+            android:textColor="#D71A58"
+            android:layout_marginEnd="8dp" />
+
+        <Button
+            android:id="@+id/btnRegresarConsulta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Regresar a Consulta"
+            android:backgroundTint="#FFFFFF"
+            android:textColor="#D71A58" />
+    </LinearLayout>
+</LinearLayout>
